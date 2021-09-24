@@ -1,0 +1,463 @@
+@media screen and (max-width: 400px) and (orientation: portrait) {
+
+    .clsMision{
+        font-size: 4vw;
+    }
+    .clsVision{
+        font-size: 4vw;
+    }
+    .clsMisionParagraph{
+        font-size: 3vw;
+        word-wrap: break-word;
+    }
+    .clsVisionParagraph{
+        font-size: 3vw;
+        word-wrap: break-word;
+    }
+    .clsTittleSesion{
+        font-size: 5vw;
+        word-wrap: break-word;
+    }
+    .clsLabelSesion{
+        font-size: 3vw;
+        word-wrap: break-word;
+    }
+    .clsBtnReturnSesion{
+        font-size: 4vw;
+        word-wrap: break-word;
+    }
+    .clsTxtPasswordSesion{
+        font-size: 3vw;
+        word-wrap: break-word;
+    }
+    .clsBtnWithinSesion{
+        font-size: 4vw;
+        word-wrap: break-word;
+    }
+    .clsTittleWelcomePage{
+        font-size: 5vw;
+        word-wrap: break-word;
+    }
+    .clsLabelWelcomePage{
+        font-size: 3vw;
+        word-wrap: break-word;
+    }
+    .clsCodeWelcomePage{
+        font-size: 3vw;
+        word-wrap: break-word;
+    }
+    .clsPlateWelcomePage{
+        font-size: 3vw;
+        word-wrap: break-word;
+    }
+    .clsSearchWelcomePage{
+        font-size: 4vw;
+        word-wrap: break-word;
+    }
+    .clsPhoneWelcomePage{
+        font-size: 3vw;
+        word-wrap: break-word;
+    }
+    .clsAdressWelcomePage{
+        font-size: 3vw;
+        word-wrap: break-word;
+    }
+    .clsAttentioWelcomePage{
+        font-size: 3vw;
+        word-wrap: break-word;
+    }
+    .clsDataGarage{
+        font-size: 3vw;
+        word-wrap: break-word;
+    }
+    .clsTittlePanel{
+        font-size: 5vw;
+        word-wrap: break-word;
+    }
+    .clsLblPanel{
+        font-size: 2vw;
+        word-wrap: break-word;
+    }
+    .clsCurrentControlPanel{
+        font-size: 2vw;
+        word-wrap: break-word;
+    }
+    .clsTittlePartsPanel{
+        font-size: 3vw;
+        word-wrap: break-word;
+    }
+    .clsTextReferencePanel{
+        font-size: 3vw;
+        word-wrap: break-word;
+    }
+    .clsTextNamePartPanel{
+        font-size: 3vw;
+        word-wrap: break-word;
+    }
+    .clsTextPricePartPanel{
+        font-size: 3vw;
+        word-wrap: break-word;
+    }
+    .clsViewPartPanel{
+        font-size: 3vw;
+        word-wrap: break-word;
+    }
+    .clsInsertPartPanel{
+        font-size: 3vw;
+        word-wrap: break-word;
+    }
+    .clsButtonReturnPartPanel{
+        font-size: 4vw;
+        word-wrap: break-word;
+    }
+    .clsTittleMOPanel{
+        font-size: 3vw;
+        word-wrap: break-word;
+    }
+    .clsTextNameMOPanel{
+        font-size: 3vw;
+        word-wrap: break-word;
+    }
+    .clsTextMechanicalMOPanel{
+        font-size: 3vw;
+        word-wrap: break-word;
+    }
+    .clsTextPriceMOPanel{
+        font-size: 3vw;
+        word-wrap: break-word;
+    }
+    .clsViewMOPanel{
+        font-size: 3vw;
+        word-wrap: break-word;
+    }
+    .clsInsertMOPanel{
+        font-size: 3vw;
+        word-wrap: break-word;
+    }
+    .clsButtonReturnMOPanel{
+        font-size: 3vw;
+        word-wrap: break-word;
+    }
+    .clsTittlePhotoPanel{
+        font-size: 3vw;
+        word-wrap: break-word;
+    }
+    .clsTextFilePhoto{
+        font-size: 3vw;
+        word-wrap: break-word;
+    }
+    .clsViewPhotoPanel{
+        font-size: 3vw;
+        word-wrap: break-word;
+    }
+    .clsInsertPhotoPanel{
+        font-size: 3vw;
+        word-wrap: break-word;
+    }
+    .clsButtonReturnPhotoPanel{
+        font-size: 3vw;
+        word-wrap: break-word;
+    }
+    .clsDataWorkshopUpdate{
+        font-size: 3vw;
+        word-wrap: break-word;
+    }
+    .clsLabelOfferPanel{
+        font-size: 3vw;
+        word-wrap: break-word;
+    }
+    .clsBtnOfferPanel{
+        font-size: 3vw;
+        word-wrap: break-word;
+    }
+    .clsBtnSetttingsPanel{
+        font-size: 3vw;
+        word-wrap: break-word;
+    }
+    .clsBtnNominaMechanicPanel{
+        font-size: 3vw;
+        word-wrap: break-word;
+    }
+    .clsTittleMeet{
+        font-size: 3vw;
+        word-wrap: break-word;
+    }
+    .clsDataClientMeet{
+        font-size: 3vw;
+        word-wrap: break-word;
+    }
+    .clsBtnReturnDataClientMeet{
+        font-size: 3vw;
+        word-wrap: break-word;
+    }
+    .clsBtnAcceptDataClientMeet{
+        font-size: 3vw;
+        word-wrap: break-word;
+    }
+    .clsNominaMechanicPanel{
+        font-size: 3vw;
+        word-wrap: break-word;
+    }
+    .clsDataNominaMechanicPanel{
+        font-size: 3vw;
+        word-wrap: break-word;
+    }
+    .clsBtnCalculateNominaMechanicPanel{
+        font-size: 3vw;
+        word-wrap: break-word;
+    }
+    .clsTotalNominaMechanicPanel{
+        font-size: 3vw;
+        word-wrap: break-word;
+    }
+    .txtDataNewMechanic{
+        font-size: 3vw;
+        word-wrap: break-word;
+    }
+    .btnDataNewMechanic{
+        font-size: 3vw;
+        word-wrap: break-word;
+    }
+    .clsTittleBlog{
+        font-size: 3vw;
+        word-wrap: break-word;
+    }
+    .clsBtnReturnBlog{
+        font-size: 3vw;
+        word-wrap: break-word;
+    }
+    
+    }
+
+    /*-----------------------------------------------------------------------------------------------------*/
+
+    @media screen and (max-width: 400px) and (orientation: landscape) {
+
+        .clsMision{
+            font-size: 4vw;
+        }
+        .clsVision{
+            font-size: 4vw;
+        }
+        .clsMisionParagraph{
+            font-size: 3vw;
+            word-wrap: break-word;
+        }
+        .clsVisionParagraph{
+            font-size: 3vw;
+            word-wrap: break-word;
+        }
+        .clsTittleSesion{
+            font-size: 5vw;
+            word-wrap: break-word;
+        }
+        .clsLabelSesion{
+            font-size: 3vw;
+            word-wrap: break-word;
+        }
+        .clsBtnReturnSesion{
+            font-size: 4vw;
+            word-wrap: break-word;
+        }
+        .clsTxtPasswordSesion{
+            font-size: 3vw;
+            word-wrap: break-word;
+        }
+        .clsBtnWithinSesion{
+            font-size: 4vw;
+            word-wrap: break-word;
+        }
+        .clsTittleWelcomePage{
+            font-size: 5vw;
+            word-wrap: break-word;
+        }
+        .clsLabelWelcomePage{
+            font-size: 3vw;
+            word-wrap: break-word;
+        }
+        .clsCodeWelcomePage{
+            font-size: 3vw;
+            word-wrap: break-word;
+        }
+        .clsPlateWelcomePage{
+            font-size: 3vw;
+            word-wrap: break-word;
+        }
+        .clsSearchWelcomePage{
+            font-size: 4vw;
+            word-wrap: break-word;
+        }
+        .clsPhoneWelcomePage{
+            font-size: 3vw;
+            word-wrap: break-word;
+        }
+        .clsAdressWelcomePage{
+            font-size: 3vw;
+            word-wrap: break-word;
+        }
+        .clsAttentioWelcomePage{
+            font-size: 3vw;
+            word-wrap: break-word;
+        }
+        .clsDataGarage{
+            font-size: 3vw;
+            word-wrap: break-word;
+        }
+        .clsTittlePanel{
+            font-size: 3.5vw;
+            word-wrap: break-word;
+        }
+        .clsLblPanel{
+            font-size: 2vw;
+            word-wrap: break-word;
+        }
+        .clsCurrentControlPanel{
+            font-size: 1.5vw;
+            word-wrap: break-word;
+        }
+        .clsTittlePartsPanel{
+            font-size: 3vw;
+            word-wrap: break-word;
+        }
+        .clsTextReferencePanel{
+            font-size: 3vw;
+            word-wrap: break-word;
+        }
+        .clsTextNamePartPanel{
+            font-size: 3vw;
+            word-wrap: break-word;
+        }
+        .clsTextPricePartPanel{
+            font-size: 3vw;
+            word-wrap: break-word;
+        }
+        .clsViewPartPanel{
+            font-size: 3vw;
+            word-wrap: break-word;
+        }
+        .clsInsertPartPanel{
+            font-size: 3vw;
+            word-wrap: break-word;
+        }
+        .clsButtonReturnPartPanel{
+            font-size: 4vw;
+            word-wrap: break-word;
+        }
+        .clsTittleMOPanel{
+            font-size: 3vw;
+            word-wrap: break-word;
+        }
+        .clsTextNameMOPanel{
+            font-size: 3vw;
+            word-wrap: break-word;
+        }
+        .clsTextMechanicalMOPanel{
+            font-size: 3vw;
+            word-wrap: break-word;
+        }
+        .clsTextPriceMOPanel{
+            font-size: 3vw;
+            word-wrap: break-word;
+        }
+        .clsViewMOPanel{
+            font-size: 3vw;
+            word-wrap: break-word;
+        }
+        .clsInsertMOPanel{
+            font-size: 3vw;
+            word-wrap: break-word;
+        }
+        .clsButtonReturnMOPanel{
+            font-size: 3vw;
+            word-wrap: break-word;
+        }
+        .clsTittlePhotoPanel{
+            font-size: 3vw;
+            word-wrap: break-word;
+        }
+        .clsTextFilePhoto{
+            font-size: 3vw;
+            word-wrap: break-word;
+        }
+        .clsViewPhotoPanel{
+            font-size: 3vw;
+            word-wrap: break-word;
+        }
+        .clsInsertPhotoPanel{
+            font-size: 3vw;
+            word-wrap: break-word;
+        }
+        .clsButtonReturnPhotoPanel{
+            font-size: 3vw;
+            word-wrap: break-word;
+        }
+        .clsDataWorkshopUpdate{
+            font-size: 3vw;
+            word-wrap: break-word;
+        }
+        .clsLabelOfferPanel{
+            font-size: 3vw;
+            word-wrap: break-word;
+        }
+        .clsBtnOfferPanel{
+            font-size: 3vw;
+            word-wrap: break-word;
+        }
+        .clsBtnSetttingsPanel{
+            font-size: 3vw;
+            word-wrap: break-word;
+        }
+        .clsBtnNominaMechanicPanel{
+            font-size: 3vw;
+            word-wrap: break-word;
+        }
+        .clsTittleMeet{
+            font-size: 3vw;
+            word-wrap: break-word;
+        }
+        .clsDataClientMeet{
+            font-size: 3vw;
+            word-wrap: break-word;
+        }
+        .clsBtnReturnDataClientMeet{
+            font-size: 3vw;
+            word-wrap: break-word;
+        }
+        .clsBtnAcceptDataClientMeet{
+            font-size: 3vw;
+            word-wrap: break-word;
+        }
+        .clsNominaMechanicPanel{
+            font-size: 3vw;
+            word-wrap: break-word;
+        }
+        .clsDataNominaMechanicPanel{
+            font-size: 3vw;
+            word-wrap: break-word;
+        }
+        .clsBtnCalculateNominaMechanicPanel{
+            font-size: 3vw;
+            word-wrap: break-word;
+        }
+        .clsTotalNominaMechanicPanel{
+            font-size: 3vw;
+            word-wrap: break-word;
+        }
+        .txtDataNewMechanic{
+            font-size: 3vw;
+            word-wrap: break-word;
+        }
+        .btnDataNewMechanic{
+            font-size: 3vw;
+            word-wrap: break-word;
+        }
+        .clsTittleBlog{
+            font-size: 3vw;
+            word-wrap: break-word;
+        }
+        .clsBtnReturnBlog{
+            font-size: 3vw;
+            word-wrap: break-word;
+        }
+        
+        }

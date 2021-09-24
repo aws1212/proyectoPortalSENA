@@ -1,0 +1,673 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, 
+        minimum-scale=1.0"> 
+        <title>TECNOCAR-SERVICE</title>
+
+        
+        <link rel="stylesheet" href="css/style_general.css">
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/styleResolution100.css">
+        <link rel="stylesheet" href="css/styleResolution200.css">
+        <link rel="stylesheet" href="css/styleResolution300.css">
+        <link rel="stylesheet" href="css/styleResolution400.css">
+        <link rel="stylesheet" href="css/styleResolution500.css">
+        <link rel="stylesheet" href="css/styleResolution600.css">
+        <link rel="stylesheet" href="css/styleResolution700.css">
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.3.5/jspdf.debug.js"></script>
+
+    </head>
+
+    <body class="body bg-green-600">
+
+        <!-- NAV -->        
+        <nav class="bg-green-600 h-1/4 w-full absolute">
+            <div class="bg-green-600 h-full w-full absolute">
+                <div id="box_mision_Garage" class="bg-green-600 h-full w-1/3 absolute text-center overflow-auto">
+                    <h2 class="relative font-semibold text-black tracking-tight font-mono top-0 sm:text-xl:text-2xl lg:text-2xl clsMision">Misión</h2>
+                    
+                </div>
+                <div class="absolute bg-green-600 h-full w-1/3 cursor-pointer left-1/3">
+                    <img src="image/logo.jpg" class="relative h-full w-full" id="btn_principal_image">
+                </div>    
+                <div id="box_vision_Garage" class="bg-green-600 h-full w-1/3 absolute left-2/3 text-center overflow-auto">
+                    <h4 class="relative font-semibold text-black tracking-tight font-mono top-0 sm:text-xl md:text-2xl lg:text-2xl clsVision">Visión</h4>                    
+                </div>            
+            </div>
+        </nav>      
+        
+        
+        <!-- DIRECT LINKS -->
+        <div class="h-3/4 w-1/5 top-1/4 bg-green-600 absolute" id="div_images_left" >     
+            <div class="top-0 relative h-1/5 bg-green-600">
+                <img id="img_services" src="image/services.png" alt="" class="h-full w-full relative cursor-pointer">
+            </div>    
+            <div class="top-0 relative top-1/5 h-1/5 bg-green-600" id="box_img_jornada_diurna">
+                <div class="absolute h-full w-full" id="secondbox_img_jornada_diurna">
+                    <img id="img_mechanic" src="image/mechanic.png" alt="" class="h-full w-full relative cursor-pointer">
+                </div> 
+            </div>   
+            <div class="top-0 relative top-1/5 h-1/5 bg-green-600" id="box_img_jornada_mixta">
+                <div class="absolute h-full w-full" id="secondbox_img_jornada_mixta">
+                    <img id="img_oil" src="image/oil.png" alt="" class="h-full w-full relative cursor-pointer">
+                </div> 
+            </div>
+            <div class="top-0 relative top-1/5 h-1/5 bg-green-600" id="box_img_jornada_nocturna">
+                <div class="absolute h-full w-full" id="secondbox_img_jornada_nocturna">
+                    <img id="img_electronic" src="image/electric.png" alt="" class="h-full w-full relative cursor-pointer">
+                </div> 
+            </div>                      
+            <div class="top-0 relative top-4/5 h-1/5 bg-green-600">
+                <img id="img_breakspring" src="image/spring.png" alt="" class="h-full w-full relative cursor-pointer">
+            </div>    
+        </div>
+
+                <!-- LOGIN GARAGE -->
+                <div id="box_login_Garage" class="h-3/4  w-3/4 left-1/4 top-1/4 bg-green-600 absolute" style="display: none;" id="photograpy_box">
+                    <div class="relative h-full w-full bg-green-600">
+                        <div class="relative w-full h-1/5 bg-green-600 text-center">
+                            <h2 class="relative font-semibold text-black tracking-tight font-mono top-1/4 overflow-clip clsTittleSesion">BUEN DÍA</h2>
+                        </div>
+                        <div class="relative w-full top-1/5 h-1/5 bg-green-600">
+                            <div class="relative h-full w-1/2 bg-green-600 float-left">
+                                <div class="relative w-full h-1/2 text-center">
+                                    <h2 class="relative font-semibold text-black tracking-tight font-mono top-1/4 overflow-clip clsLabelSesion">INICIO DE SESIÓN</h2>
+                                </div>
+                                <div class="relative w-full h-1/2">
+                                    <input id="btn_return_pass" class="relative h-full w-full bg-green-700 cursor-pointer overflow-clip clsBtnReturnSesion" onclick="returnPass()" type="button" value="Volver">
+                                </div>                        
+                            </div>
+                            <div class="absolute left-1/2 h-full w-1/2 bg-green-600">
+                                <div class="relative w-full h-1/2 text-center">
+                                    <input id="txt_pass_garage" class="relative h-full w-full bg-green-100 overflow-clip clsTxtPasswordSesion" type="password" placeholder="Contraseña">
+                                </div>
+                                <div class="relative w-full h-1/2">
+                                    <input id="btn_in_garage" class="relative h-full w-full bg-green-700 cursor-pointer overflow-clip clsBtnWithinSesion" onclick="intoGarage()" type="button" value="Ingresar">
+                                </div>
+                            </div>                    
+                        </div>
+                    </div>            
+                </div>
+        
+        <!-- SEARCH FOTOGRAPHY -->
+        <div class="h-3/4  w-3/4 left-1/4 top-1/4 bg-green-600 absolute" style="display: block;" id="photograpy_box">
+            <div class="relative h-full w-full bg-green-600">
+                <div class="relative w-full h-1/5 bg-green-600 text-center">
+                    <h2 class="relative font-semibold text-black tracking-tight font-mono top-1/4 overflow-clip clsTittleWelcomePage">BIENVENIDO</h2>
+                </div>
+                <div class="relative w-full top-1/5 h-1/5 bg-green-600">
+                    <div class="relative h-full w-1/2 bg-green-600 float-left">
+                        <div class="relative w-full h-1/2 text-center">
+                            <h2 class="relative font-semibold text-black tracking-tight font-mono top-1/4 overflow-clip clsLabelWelcomePage">PROCESO DE SU VEHICULO</h2>
+                        </div>
+                        <div class="relative w-full h-1/2">
+                            <input id="txt_photo_for_code" class="relative h-full w-full bg-green-100 overflow-clip clsCodeWelcomePage" type="text" placeholder="Codigo de fotografía">
+                        </div>                        
+                    </div>
+                    <div class="absolute left-1/2 h-full w-1/2 bg-green-600">
+                        <div class="relative w-full h-1/2 text-center">
+                            <input id="txt_photo_for_plate" class="relative h-full w-full bg-green-100 overflow-clip clsPlateWelcomePage" type="text" placeholder="Placa">
+                        </div>
+                        <div class="relative w-full h-1/2">
+                            <input id="btn_search_for_plate" class="relative h-full w-full bg-green-700 cursor-pointer overflow-clip clsSearchWelcomePage" onclick="call_photos_Client(this)" type="button" value="Buscar">
+                        </div>
+                    </div>                    
+                </div>
+                <div class="relative w-full top-2/5 h-1/5 bg-green-600">
+                    <div id="boxOne_photoClient" class="relative h-full w-1/2 bg-green-600 float-left">
+                        
+                    </div>
+                    <div id="boxTwo_photoClient" class="relative left-1/2 h-full w-1/2 bg-green-600">
+                        
+                    </div>
+                </div>
+                <div class="relative w-full top-3/5 h-1/5 bg-green-600">
+                    <div id="boxThree_photoClient" class="relative h-full w-1/2 bg-green-600 float-left">
+                       
+                    </div>
+                    <div id="boxFour_photoClient" class="relative left-1/2 h-full w-1/2 bg-green-600">
+                        
+                    </div>
+                </div>
+                <div class="relative w-full top-4/5 h-1/5 bg-green-600">
+                    <div class="relative h-full w-1/3 bg-green-600 float-left">
+                        <div class="relative h-1/2 w-full bg-green-600">
+                            <h2 class="relative font-semibold text-black tracking-tight font-mono top-1/4 overflow-clip clsPhoneWelcomePage">TELÉFONO</h2>
+                        </div>
+                        <div id="box_phone_garage" class="relative h-1/2 w-full bg-green-600">
+
+                        </div>
+                    </div>
+                    <div class="absolute left-1/3 h-full w-1/3 bg-green-600">
+                        <div class="relative h-1/2 w-full bg-green-600">
+                            <h2 class="relative font-semibold text-black tracking-tight font-mono top-1/4 overflow-clip clsAdressWelcomePage">DIRECCIÓN</h2>
+                        </div>
+                        <div id="box_address_garage" class="relative h-1/2 w-full bg-green-600">
+
+                        </div>                        
+                    </div>
+                    <div class="absolute left-2/3 h-full w-1/3 bg-green-600">
+                        <div class="relative h-1/2 w-full bg-green-600">
+                            <h2 class="relative font-semibold text-black tracking-tight font-mono top-1/4 overflow-clip clsAttentioWelcomePage">HORARIO DE ATENCIÓN</h2>
+                        </div>
+                        <div id="box_attention_garage" class="relative h-1/2 w-full bg-green-600">
+
+                        </div>
+                    </div>
+                </div>
+            </div>            
+        </div>
+        
+        <!-- CONTROL PANEL -->
+
+        <div class="h-3/4  w-3/4 left-1/4 top-1/4 bg-green-600 absolute" style="display: none;" id="control_box">
+            <div class="relative h-full w-full bg-green-600">
+                <div class="relative h-full w-full bg-green-600" id="box_comment" name="box_comment">
+                    <div class="relative w-full h-1/5 bg-green-600">
+                        <div class="relative w-full h-1/2 bg-green-600 text-center">
+                            <h2 class="relative font-semibold text-black tracking-tight font-mono top-1/4 overflow-clip clsTittlePanel">PANEL DE CONTROL</h2>
+                        </div>
+                        <div id="lbls_control_panel" class="relative w-full h-1/2 bg-green-600 text-center overflow-y-scroll" style="display:block;">
+                            <div class="relative w-4/5 h-full float-left bg-green-100">
+                                <div class="relative w-1/6 h-full float-left bg-green-700">
+                                    <h2 class="relative font-semibold text-black tracking-tight font-mono overflow-clip clsLblPanel">Rep</h2>
+                                </div>
+                                <div class="relative w-1/6 h-full float-left bg-green-700">
+                                    <h2 class="relative font-semibold text-black tracking-tight font-mono overflow-clip clsLblPanel">Placa</h2>
+                                </div>
+                                <div class="relative w-1/6 h-full float-left bg-green-700">
+                                    <h2 class="relative font-semibold text-black tracking-tight font-mono overflow-clip clsLblPanel">Nombre</h2>
+                                </div>
+                                <div class="relative w-1/6 h-full float-left bg-green-700">
+                                    <h2 class="relative font-semibold text-black tracking-tight font-mono overflow-clip clsLblPanel">Telefono</h2>
+                                </div>
+                                <div class="relative w-1/6 h-full float-left bg-green-700">
+                                    <h2 class="relative font-semibold text-black tracking-tight font-mono overflow-clip clsLblPanel">Servicio</h2>
+                                </div>
+                                <div class="relative w-1/6 h-full float-left bg-green-700">
+                                    <h2 class="relative font-semibold text-black tracking-tight font-mono overflow-clip clsLblPanel">Hora</h2>
+                                </div>
+                            </div>
+                            <div class="relative w-1/5 h-full float-left bg-green-700">
+                                <div class="relative w-1/2 h-full float-left bg-green-700">
+                                    <h2 class="relative font-semibold text-black tracking-tight font-mono overflow-clip clsLblPanel">Cancelar</h2>
+                                </div>
+                                <div class="relative w-1/2 h-full float-left bg-green-700">
+                                    <h2 class="relative font-semibold text-black tracking-tight font-mono overflow-clip clsLblPanel">Ingresar</h2>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="box_panel_control" class="relative w-full h-4/5 bg-green-600">
+                        <div id="box_citas_pendientes" class="relative w-full h-4/5 overflow-y-scroll text-center" style="display: block;">
+                            
+                        </div>
+                        <div id="box_actual_repair" class="relative w-full h-4/5 text-center" style="display: none;">
+                            <div class="relative w-1/3 h-full float-left bg-green-600">
+                                <div class="relative w-full h-1/5 bg-green-600">
+                                    <h2 id="lbl_part" class="relative font-semibold text-black tracking-tight font-mono top-1/4 cursor-pointer overflow-clip clsTittlePartsPanel">Repuestos</h2>
+                                </div>
+                                <div class="relative w-full h-4/5 top-1/5 bg-green-600">
+                                    <form id="form_insert_new_part" name="form_insert_new_part" class="relative w-full h-full">
+                                        <div id="insert_part_box" class="relative w-full h-full bg-green-600" style="display: block;">
+                                            <div class="relative w-full h-4/5 bg-green-600">
+                                                <div class="relative w-full h-1/3 bg-green-600">
+                                                    <input id="txt_reference_part" class="relative h-full w-full bg-green-100 overflow-clip clsTextReferencePanel" onkeyup="search_Part()" type="text" placeholder="REFERENCIA">
+                                                </div>
+                                                <div class="relative w-full h-1/3 bg-green-600">
+                                                    <input id="txt_name_part" class="relative h-full w-full bg-green-100 overflow-clip clsTextNamePartPanel" type="text" placeholder="NOMBRE">
+                                                </div>
+                                                <div class="relative w-full h-1/3 bg-green-600">
+                                                    <input id="txt_price_part" class="relative h-full w-full bg-green-100 overflow-clip clsTextPricePartPanel" type="text" placeholder="PRECIO">
+                                                </div>
+                                            </div>                                     
+                                            <div class="relative w-full h-1/5 bg-green-600">
+                                                <div class="relative w-1/2 h-full float-left">
+                                                    <input id="btn_see_repuesto" class="relative h-full w-full bg-green-700 cursor-pointer overflow-clip clsViewPartPanel" type="button" value="VER">
+                                                </div>
+                                                <div class="relative w-1/2 h-full float-left">
+                                                    <input id="btn_insert_repuesto" class="relative h-full w-full bg-green-700 cursor-pointer overflow-clip clsInsertPartPanel" type="submit" value="ASIGNAR">
+                                                </div> 
+                                            </div>
+                                        </div>
+                                        <div id="current_part_box" class="relative w-full h-full bg-green-600" style="display: none;">
+                                            <div class="relative w-full h-4/5 bg-green-600 overflow-y-scroll" id="sub_box_current_part">
+                                                                                            
+                                            </div>                                      
+                                            <div class="relative w-full h-1/5 bg-green-600">
+                                                <div class="relative w-full h-full float-left">
+                                                    <input id="btn_return_new_part" class="relative h-full w-full bg-green-700 cursor-pointer overflow-clip clsButtonReturnPartPanel" type="button" value="ATRAS">
+                                                </div> 
+                                            </div>
+                                        </div>
+                                    </form>                                    
+                                </div>
+                            </div>
+                            <div class="relative w-1/3 h-full float-left bg-green-600">
+                                <div class="relative w-full h-1/5 bg-green-600">
+                                    <h2 id="lbl_repair" class="relative font-semibold text-black tracking-tight font-mono top-0 top-1/4 cursor-pointer overflow-clip clsTittleMOPanel">Mano de obra</h2>
+                                </div>
+                                <div class="relative w-full h-4/5 top-1/5 bg-green-600">
+                                    <form id="form_insert_new_repair" class="relative w-full h-full">
+                                        <div id="insert_repair_box" class="relative w-full h-full bg-green-600" style="display: block;">
+                                            <div class="relative w-full h-4/5 bg-green-600">
+                                                <div class="relative w-full h-1/3 bg-green-600">
+                                                    <input id="txt_name_reparation" class="relative h-full w-full bg-green-100 overflow-clip clsTextNameMOPanel" onkeyup="search_Repair()" type="text" placeholder="REPARACIÓN">
+                                                </div>
+                                                <div class="relative w-full h-1/3 bg-green-600">
+                                                    <select id="txt_name_mechanic" class="relative h-full w-full bg-green-100 overflow-clip clsTextMechanicalMOPanel">
+                                                        <option>Mecánico</option>   
+                                                    </select>
+                                                </div>
+                                                <div class="relative w-full h-1/3 bg-green-600">
+                                                    <input id="txt_price_repair" class="relative h-full w-full bg-green-100 overflow-clip clsTextPriceMOPanel" type="text" placeholder="VALOR">
+                                                </div>
+                                            </div>
+                                            <div class="relative w-full h-1/5 bg-green-600">
+                                                <div class="relative w-1/2 h-full float-left">
+                                                    <input id="btn_see_repair" class="relative h-full w-full bg-green-700 cursor-pointer overflow-clip clsViewMOPanel" type="button" value="VER">
+                                                </div>
+                                                <div class="relative w-1/2 h-full float-left">
+                                                    <input id="btn_insert_repair" class="relative h-full w-full bg-green-700 cursor-pointer overflow-clip clsInsertMOPanel" type="submit" value="ASIGNAR">
+                                                </div>                                            
+                                            </div>
+                                        </div>
+                                        <div id="current_repair_box" class="relative w-full h-full bg-green-600" style="display: none;">
+                                            <div class="relative w-full h-4/5 bg-green-600 overflow-y-scroll" id="sub_box_current_repair">
+
+                                            </div>                                      
+                                            <div class="relative w-full h-1/5 bg-green-600">
+                                                <div class="relative w-full h-full float-left">
+                                                    <input id="btn_return_new_repair" class="relative h-full w-full bg-green-700 cursor-pointer clsButtonReturnMOPanel" type="button" value="ATRAS">
+                                                </div> 
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                            <div class="relative w-1/3 h-full float-left bg-green-600">
+                                <div class="relative w-full h-1/5 bg-green-600">
+                                    <h2 id="lbl_photo" class="relative font-semibold text-black tracking-tight font-mono top-0 top-1/4 cursor-pointer overflow-clip clsTittlePhotoPanel">Fotografía</h2>
+                                </div>
+                                <div class="relative w-full h-4/5 top-1/5 bg-green-600">
+                                    <form id="form_insert_new_photo" class="relative w-full h-full">
+                                        <div id="insert_photo_box" class="relative w-full h-full bg-green-600" style="display: block;">
+                                            <div class="relative w-full h-1/5 bg-green-600">
+                                                <input id="txt_photo_one" class="relative h-full w-full bg-green-100 overflow-clip clsTextFilePhoto" type="file">
+                                            </div>
+                                            <div class="relative w-full h-1/5 bg-green-600">
+                                                <input id="txt_photo_two" class="relative h-full w-full bg-green-100 overflow-clip clsTextFilePhoto" type="file">
+                                            </div>
+                                            <div class="relative w-full h-1/5 bg-green-600">
+                                                <input id="txt_photo_three" class="relative h-full w-full bg-green-100 overflow-clip clsTextFilePhoto" type="file">
+                                            </div>
+                                            <div class="relative w-full h-1/5 bg-green-600">
+                                                <input id="txt_photo_four" class="relative h-full w-full bg-green-100 overflow-clip clsTextFilePhoto" type="file">
+                                            </div>
+                                            <div class="relative w-full h-1/5 bg-green-600">
+                                                <div class="relative w-1/2 h-full float-left">
+                                                    <input id="btn_see_photo" class="relative h-full w-full bg-green-700 cursor-pointer overflow-clip clsViewPhotoPanel" type="button" value="VER">
+                                                </div>
+                                                <div class="relative w-1/2 h-full float-left">
+                                                    <input id="btn_insert_photo" class="relative h-full w-full bg-green-700 cursor-pointer overflow-clip clsInsertPhotoPanel" type="submit" value="ASIGNAR">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div id="current_photo_box" class="relative w-full h-full bg-green-600" style="display: none;">
+                                            <div class="absolute w-full h-1/5 bg-green-600" style="top:80%">
+                                                <div class="relative w-full h-full float-left">
+                                                    <input id="btn_return_photo" class="relative h-full w-full bg-green-700 cursor-pointer overflow-clip clsButtonReturnPhotoPanel" type="button" value="ATRAS">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="box_setting_data_garage" class="relative w-full h-4/5 overflow-y-scroll" style="display: none;">
+                            <div class="relative h-1/3 w-full bg-green-600">
+                                <div class="relative w-1/2 h-full float-left bg-green-600">
+                                    <input id="txt_name_garage" class="relative h-1/2 w-full bg-green-100 overflow-clip clsDataWorkshopUpdate" type="text" placeholder="RAZÓN SOCIAL">
+                                    <input id="txt_email_garage" class="relative h-1/2 w-full bg-green-100 overflow-clip clsDataWorkshopUpdate" type="text" placeholder="CORREO ELECTRÓNICO">
+                                </div>
+                                <div class="relative w-1/2 h-full float-left bg-green-600">
+                                    <input id="txt_adress_garage" class="relative h-1/3 w-full bg-green-100 overflow-clip clsDataWorkshopUpdate" type="text" placeholder="DIRECCIÓN">
+                                    <input id="txt_phono_garage" class="relative h-1/3 w-full bg-green-100 overflow-clip clsDataWorkshopUpdate" type="text" placeholder="TELEFONO">
+                                    <input id="txt_attention_garage" class="relative h-1/3 w-full bg-green-100 overflow-clip clsDataWorkshopUpdate" type="text" placeholder="HORARIO DE ATENCIÓN">
+                                </div>
+                            </div>
+                            <div class="relative h-1/3 w-full bg-green-600">
+                                <div class="relative w-1/2 h-full float-left bg-green-600">
+                                    <textarea id="txt_mision_Garage" class="p-2 relative h-full w-full resize-none bg-green-100 overflow-clip clsDataWorkshopUpdate" placeholder="MISIÓN" maxlength="150"></textarea>
+                                </div>
+                                <div class="relative w-1/2 h-full float-left bg-green-600">
+                                    <textarea id="txt_vision_Garage" class="p-2 relative h-full w-full resize-none bg-green-100 overflow-clip clsDataWorkshopUpdate" placeholder="VISIÓN" maxlength="150"></textarea>
+                                </div>
+                            </div>
+                            <div class="relative h-1/3 w-full bg-green-600">
+                                <div class="relative w-1/2 h-full float-left bg-green-600">
+                                    <input id="txt_pass_garage_update" class="relative h-full w-full bg-green-100 overflow-clip clsDataWorkshopUpdate" type="password" placeholder="CONTRASEÑA">
+                                </div>
+                                <div class="relative w-1/2 h-full float-left bg-green-600">
+                                    <input id="txt_newpass_garage" class="relative h-full w-full bg-green-100 overflow-clip clsDataWorkshopUpdate" type="password" placeholder="NUEVA CONTRASEÑA">
+                                </div>
+                            </div>
+                        </div>
+                        <div id="box_offer_data_garage" class="relative w-full h-4/5 overflow-y-scroll" style="display: none;">                            
+                            <div id="offer_current_box" class="absolute w-full h-full bg-green-600">
+                                <div id="upBox_offer_box" class="relative w-full h-1/5 bg-green-600">
+                                    <div class="relative w-1/5 h-full float-left bg-green-600">
+                                        <img src="image/logo.jpg" class="relative h-full w-full">
+                                    </div>
+                                    <div id="beforeRepair_idRepair" class="relative w-2/5 h-full float-left bg-green-600 text-center">
+                                        <div class="absolute w-full h-1/2 float-left bg-green-600 text-center">
+                                            <h2 class="relative font-semibold text-black tracking-tight font-mono cursor-pointer overflow-clip clsLabelOfferPanel">FACTURA</h2>
+                                        </div>
+                                    </div>
+                                    <div id="beforeRepair_dataGarage" class="relative w-2/5 h-full float-left bg-green-600 text-center">
+                                        
+                                    </div>
+                                </div>
+                                <div class="relative w-full h-1/5 bg-green-600">
+                                    <div id="beforeRepair_dataClient" class="relative w-full h-1/2 bg-green-600">
+                                        
+                                    </div>
+                                    <div class="relative w-full h-1/2 bg-green-600">
+                                        <div class="absolute w-1/4 h-full bg-green-600 float-left">
+                                            <h2 class="relative font-semibold text-black tracking-tight font-mono cursor-pointer overflow-clip clsLabelOfferPanel">Repuestos</h2>
+                                        </div>
+                                        <div class="absolute w-1/4 left-1/4 h-full bg-green-600 float-left">
+                                            <h2 class="relative font-semibold text-black tracking-tight font-mono cursor-pointer overflow-clip clsLabelOfferPanel">Precio</h2>
+                                        </div>
+                                        <div class="absolute w-1/4 left-2/4 h-full bg-green-600 float-left">
+                                            <h2 class="relative font-semibold text-black tracking-tight font-mono cursor-pointer overflow-clip clsLabelOfferPanel">Reparaciones</h2>
+                                        </div>
+                                        <div class="absolute w-1/4 left-3/4 h-full bg-green-600 float-left">
+                                            <h2 class="relative font-semibold text-black tracking-tight font-mono cursor-pointer overflow-clip clsLabelOfferPanel">Valor</h2>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="relative w-full h-2/5 bg-green-600">
+                                    <div id="beforeRepair_dataPart" class="relative w-1/2 h-full bg-green-600 float-left overflow-y-scroll">
+                                        
+                                    </div>
+                                    <div id="beforeRepair_dataRepair" class="relative w-1/2 h-full bg-green-600 float-left overflow-y-scroll">
+                                        
+                                    </div>
+                                </div>
+                                <div class="relative w-full h-1/5 bg-green-600">
+                                    <div class="absolue w-full h-1/2 bg-green-600">
+                                        <div id="box_total_Part" class="relative w-1/2 h-full float-left">
+                                            <div class="absolute w-1/2 h-full bg-green-600 float-left">
+                                                <h2 class="relative font-semibold text-black tracking-tight font-mono overflow-clip clsLabelOfferPanel">Total repuestos</h2>
+                                            </div>  
+                                        </div>
+                                        <div id="box_total_Repair" class="relative w-1/2 h-full float-left">
+                                            <div class="absolute w-1/2 h-full bg-green-600 float-left">
+                                                <h2 class="relative font-semibold text-black tracking-tight font-mono overflow-clip clsLabelOfferPanel">Total reparaciones</h2>
+                                            </div>   
+                                        </div>
+                                    </div>               
+                                    <div id="beforeRepair_priceTotal" class="relative w-full h-1/2 bg-green-600">
+
+                                    </div>                     
+                                </div>
+                            </div>                        
+                        </div>
+                        <div class="relative w-full h-1/5 top-4/5">
+                            <div class="relative w-full h-full bg-green-600">
+                                <div class="relative h-full w-1/3 bg-blue-200 float-left">
+                                    <input id="btn_exit_control_panel" class="relative h-full w-full cursor-pointer bg-green-700 border-black overflow-clip clsBtnOfferPanel" type="button" value="Volver">
+                                </div>
+                                <div id="btn_repair_box" class="absolute left-1/3 h-full w-1/3 bg-green-600" style="display: block;">    
+                                    <input id="btn_setting_control_panel"  class="relative h-full w-full cursor-pointer bg-green-700 border-black overflow-clip clsBtnSetttingsPanel" type="button" value="Ajustes">
+                                </div>
+                                <div id="data_repair_box" class="absolute left-1/3 h-full w-1/3 bg-green-600" style="display: none;">    
+                                    <input id="btn_id_repair"  class="relative h-1/2 w-full cursor-pointer bg-green-700 border-black overflow-clip" type="button" value="">
+                                    <input id="btn_placa_repair"  class="relative h-1/2 w-full cursor-pointer bg-green-700 border-black overflow-clip" type="button" value="">
+                                </div>
+                                <div class="absolute left-2/3 h-full w-1/3 bg-green-600">    
+                                    <input id="btn_nomina_control_panel" class="relative h-full w-full cursor-pointer bg-green-700 border-black overflow-clip clsBtnNominaMechanicPanel" type="button" value="Nomina">
+                                </div>
+                            </div>
+                        </div>                        
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- CITAS -->
+        <div class="h-3/4  w-3/4 left-1/4 top-1/4 bg-green-600 absolute" style="display: none;" id="meet_box">
+            <div class="relative h-full w-full bg-green-600">
+                <div class="relative w-full h-1/5 bg-green-600 text-center">
+                    <h2 class="relative font-semibold text-black tracking-tight font-mono top-0 top-1/4 overflow-clip clsTittleMeet">AGENDE SU CITA</h2>
+                </div>
+                <form class="relative h-4/5 top-1/5 w-full bg-green-600" id="form_new_meet" name="form_new_meet">
+                    <div class="relative w-full h-1/4 bg-green-600">
+                        <div class="relative w-1/2 h-full float-left bg-green-600">
+                            <input id="txt_identification" class="relative h-full w-full bg-green-100 overflow-clip clsDataClientMeet" type="text" placeholder="IDENTIFICACIÓN" onkeypress="return solonumeros(event)" onpaste="return false">
+                        </div>
+                        <div class="relative w-1/2 h-full float-left bg-green-600">
+                            <input id="txt_name" class="relative h-full w-full bg-green-100 overflow-clip clsDataClientMeet" type="text" placeholder="NOMBRE COMPLETO"  onkeypress="return sololetras(event)" onpaste="return false">
+                        </div>
+                    </div>
+                    <div class="relative w-full h-1/4 bg-green-600">
+                        <div class="relative w-1/2 h-full float-left bg-green-600">
+                            <input id="txt_licenceplate" class="relative h-full w-full bg-green-100 uppercase overflow-clip clsDataClientMeet" type="text" placeholder="PLACA" maxlength="6">
+                        </div>
+                        <div class="relative w-1/2 h-full float-left bg-green-600">
+                            <input id="txt_service" class="relative h-full w-full bg-green-100 overflow-clip clsDataClientMeet" type="text" placeholder="SERVICIO" readonly>
+                        </div>
+                    </div>
+                    <div class="relative w-full h-1/4 bg-green-600">
+                        <div class="relative w-1/2 h-full float-left bg-green-600">
+                            <input id="txt_phone" class="relative h-1/2 w-full bg-green-100 overflow-clip clsDataClientMeet" type="text" placeholder="TELEFONO" onkeypress="return solonumeros(event)" onpaste="return false">
+                            <input id="txt_email" class="relative h-1/2 w-full bg-green-100 overflow-clip clsDataClientMeet" type="text" placeholder="CORREO ELECTRÓNICO">
+                        </div>
+                        <div class="relative w-1/2 h-full float-left bg-green-600">
+                            <div class="relative w-1/4 h-full float-left bg-green-600">
+                                <select id="txt_day" class="relative h-full w-full bg-green-100 overflow-clip clsDataClientMeet">
+                                    <option>DÍA</option>
+                                    <option>1</option>
+                                    <option>2</option>
+                                    <option>3</option>
+                                    <option>4</option>
+                                    <option>5</option>
+                                    <option>6</option>
+                                    <option>7</option>
+                                    <option>8</option>
+                                    <option>9</option>
+                                    <option>10</option>
+                                    <option>11</option>
+                                    <option>12</option>
+                                    <option>13</option>
+                                    <option>14</option>
+                                    <option>15</option>
+                                    <option>16</option>
+                                    <option>17</option>
+                                    <option>18</option>
+                                    <option>19</option>
+                                    <option>20</option>
+                                    <option>21</option>
+                                    <option>22</option>
+                                    <option>23</option>
+                                    <option>24</option>
+                                    <option>25</option>
+                                    <option>26</option>
+                                    <option>27</option>
+                                    <option>28</option>
+                                    <option>29</option>
+                                    <option>30</option>
+                                    <option>31</option>
+                                </select>
+                            </div>
+                            <div class="relative w-1/4 h-full float-left bg-green-600">
+                                <select id="txt_mounth" class="relative h-full w-full bg-green-100 overflow-clip clsDataClientMeet">
+                                    <option>MES</option>
+                                    <option>Enero</option>
+                                    <option>Febrero</option>
+                                    <option>Marzo</option>
+                                    <option>Abril</option>
+                                    <option>Mayo</option>
+                                    <option>Junio</option>
+                                    <option>Julio</option>
+                                    <option>Agosto</option>
+                                    <option>Septiembre</option>
+                                    <option>Octubre</option>
+                                    <option>Noviembre</option>
+                                    <option>Diciembre</option>
+                                </select>
+                            </div>
+                            <div class="relative w-1/4 h-full float-left bg-green-600">
+                                <select id="txt_year" class="relative h-full w-full bg-green-100 overflow-clip clsDataClientMeet" readonly  >
+                                    <option>AÑO</option>
+                                    <option>2021</option>
+                                </select>
+                            </div>
+                            <div class="relative w-1/4 h-full float-left bg-green-600">
+                                <select id="txt_hour" class="relative h-full w-full bg-green-100 overflow-clip clsDataClientMeet">
+                                    <option>HORA</option>
+                                    <option>08:00</option>
+                                    <option>09:00</option>
+                                    <option>10:00</option>
+                                    <option>11:00</option>
+                                    <option>13:00</option>
+                                    <option>14:00</option>
+                                    <option>15:00</option>
+                                    <option>16:00</option>
+                                    <option>17:00</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="relative w-full h-1/4 bg-green-600">
+                        <div class="relative w-1/2 h-full float-left bg-green-600">
+                            <input id="btn_exit_meet" class="relative h-full w-full cursor-pointer bg-green-700 border-black overflow-clip clsBtnReturnDataClientMeet" type="button" value="Volver">
+                        </div>
+                        <div class="relative w-1/2 h-full float-left bg-green-600">
+                            <input id="btn_get_meet" class="relative h-full w-full cursor-pointer bg-green-700 border-black overflow-clip clsBtnAcceptDataClientMeet" type="submit" value="Aceptar">
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+         <!-- Nomina -->
+        <div class="h-3/4  w-3/4 left-1/4 top-1/4 bg-green-600 absolute" style="display: none;" id="nomina_box">
+            <div class="relative h-full w-full bg-green-600">
+                <div class="relative w-full h-1/5 bg-green-600 text-center">
+                    <h2 class="relative font-semibold text-black tracking-tight font-mono top-0 top-1/4 overflow-clip clsNominaMechanicPanel">NOMINA</h2>
+                </div>
+                <div id="nomina_technical_box" class="relative w-full h-3/5 bg-green-600 text-center" style="display: block;">
+                        <div class="relative h-1/5 w-full bg-green-600">
+                            <div class="relative w-1/3 h-full float-left bg-green-600">
+                                <select id="txt_name_mechanic_nomina" class="relative h-full w-full bg-green-100 overflow-clip clsDataNominaMechanicPanel">
+                                    <option>Mecánico</option>      
+                                </select>
+                            </div>
+                            <div class="relative w-1/3 h-full float-left bg-green-600">
+                                <select id="txt_month_nomina" class="relative h-full w-full bg-green-100 overflow-clip clsDataNominaMechanicPanel">
+                                    <option>Mes</option>
+                                    <option>Enero</option>
+                                    <option>Febrero</option>
+                                    <option>Marzo</option>
+                                    <option>Abril</option>
+                                    <option>Mayo</option>
+                                    <option>Junio</option>
+                                    <option>Julio</option>
+                                    <option>Agosto</option>
+                                    <option>Septiembre</option>
+                                    <option>Octubre</option>
+                                    <option>Noviembre</option>
+                                    <option>Diciembre</option>
+                                </select>
+                            </div>
+                            <div class="relative w-1/3 h-full float-left bg-green-600">
+                                <input id="txt_porcent_nomina" class="relative h-full w-full bg-green-100 overflow-clip clsDataNominaMechanicPanel" type="text" placeholder="Porcentaje de pago">
+                            </div>
+                        </div>
+                        <div class="relative h-1/5 w-full bg-green-600">
+                            <input id="btn_calcule_nomina" type="button" class="relative h-full w-full cursor-pointer bg-green-700 overflow-clip clsBtnCalculateNominaMechanicPanel" value="Calcular"overflow-clip>
+                        </div>
+                        <div class="relative h-3/5 w-full bg-green-600">
+                            <input id="txt_calcule_nomina" type="text" class="relative h-full w-full bg-green-100 overflow-clip clsTotalNominaMechanicPanel" placeholder="TOTAL A PAGAR" readonly>
+                        </div>
+                </div>
+                <div id="new_technical_box" class="relative w-full h-3/5 bg-green-600 text-center" style="display: none;">
+                    <div class="relative w-full h-1/3 bg-green-600">
+                        <div class="relative w-1/2 h-full float-left bg-green-600">
+                            <input id="txt_id_mechanic" class="relative h-full w-full bg-green-100 overflow-clip txtDataNewMechanic" type="text" placeholder="IDENTIFICACIÓN">
+                        </div>
+                        <div class="relative w-1/2 h-full bg-green-600 float-left">
+                            <input id="txt_phone_mechanic" class="relative h-full w-full bg-green-100 overflow-clip txtDataNewMechanic" type="text" placeholder="TELEFONO">
+                        </div>            
+                    </div>
+                    <div class="relative w-full h-1/3 bg-green-600">
+                        <input id="txt_newname_mechanic" class="relative h-full w-full bg-green-100 overflow-clip txtDataNewMechanic" type="text" placeholder="NOMBRE">
+                    </div>
+                    <div class="relative w-full h-1/3 bg-green-600">
+                        <input id="txt_function_mechanic" class="relative h-full w-full bg-green-100 overflow-clip txtDataNewMechanic" type="text" placeholder="CARGO">
+                    </div>                     
+                </div>
+                <div class="relative w-full h-1/5 bg-green-600">
+                        <div class="relative h-full w-1/2 float-left">
+                            <input id="btn_exit_nomina" class="relative h-full w-full cursor-pointer bg-green-700 border-black overflow-clip btnDataNewMechanic" type="button" value="Volver">
+                        </div>
+                        <div class="relative h-full w-1/2 float-left bg-green-600">
+                            <input id="btn_new_technical" class="relative h-full w-full cursor-pointer bg-green-700 border-black overflow-clip btnDataNewMechanic" type="button" value="Nuevo técnico">
+                        </div>
+                </div> 
+            </div>               
+        </div>   
+        
+        <!-- BLOG -->
+        <div class="h-3/4  w-3/4 left-1/4 top-1/4 bg-green-600 absolute" style="display: none;" id="blog_box">
+            <div class="relative h-full w-full bg-green-600">
+                <div class="relative w-full h-4/5 bg-green-600 text-center escrito_blog" style="display: block;">
+                    <div class="relative w-full h-1/5 bg-green-600">
+                        <h2 class="relative font-semibold text-black tracking-tight font-mono top-0 top-1/4 overflow-clip clsTittleBlog">TITULO DEL ARTICULO</h2>
+                    </div>
+                    <div class="relative w-full h-4/5 bg-green-600 overflow-y-scroll">
+
+                    </div>                   
+                </div>
+                <div class="relative w-full h-1/5 top-4/5 bg-green-600">
+                    <div class="relative h-full w-full float-left">
+                        <input id="btn_exit_blog" class="relative h-full w-full cursor-pointer bg-green-700 border-black overflow-clip clsBtnReturnBlog" type="button" value="Volver">
+                    </div>
+                </div> 
+            </div>         
+        </div>
+       
+        <script src="js/jquery.js"></script>
+        <script src="js/event_validar_caracter.js"></script>
+        <script src="js/-into_Garage.js"></script>
+        <script src="js/-delete_control_panel.js"></script>
+        <script src="js/-select_control_panel.js"></script>        
+        <script src="js/-events_button_left.js"></script>
+        <script src="js/-event_button_exit.js"></script>
+        <script src="js/-events_button_control_panel.js"></script>
+        <script src="js/-events_button_nomina.js"></script>
+        <script src="js/-insert_new_meet.js"></script>
+        <script src="js/-insert_new_part.js"></script>
+        <script src="js/-insert_new_repair.js"></script>
+        <script src="js/-insert_new_photo.js"></script>
+        <script src="js/-select_current_part.js"></script>
+        <script src="js/-select_current_repair.js"></script>
+        <script src="js/-call_photo_repair.js"></script>
+        <script src="js/-event_delete_photo.js"></script>
+        <script src="js/-select_mechanics.js"></script>
+        <script src="js/-update_data_garage.js"></script>
+        <script src="js/-calculate_nomina.js"></script>
+        <script src="js/-select_data_Garage.js"></script>
+        <script src="js/-call_photos_Client.js"></script>
+        <script src="js/-select_before_repair.js"></script>
+        <script src="js/-call_mis_vis_Garage.js"></script>
+        <script src="js/-event_search_Database.js"></script>
+        <script src="js/-event_files.js"></script>        
+
+    </body>
+</html>
